@@ -1,0 +1,5 @@
+#Ignora directorio metadata
+Library/metadata/
+#Ignora .info
+*.info
+
