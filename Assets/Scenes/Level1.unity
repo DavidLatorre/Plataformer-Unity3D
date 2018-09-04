@@ -3234,7 +3234,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 827375605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08448607, y: -3.0075426, z: -10}
+  m_LocalPosition: {x: 0.084751904, y: -3.0075426, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490022013}
@@ -3749,7 +3749,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 4.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3772,7 +3772,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1316341102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.08880168, y: 0.37533092, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4016,6 +4016,7 @@ MonoBehaviour:
   playerRb: {fileID: 1404395499}
   speed: 5
   jumpSpeed: 380
+  playeranim: {fileID: 1404395504}
 --- !u!212 &1404395502
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4053,7 +4054,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 94e8203c005e67d489980fa5d404e905, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.3333334, y: 2}
