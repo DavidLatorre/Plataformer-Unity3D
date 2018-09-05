@@ -42,7 +42,8 @@ public class PlayerMovement : MonoBehaviour {
 		{
 
 			if (Input.GetKeyDown(KeyCode.Space))
-		{
+		{	
+			GetComponent<AudioSource>().Play();
 			playerRb.AddForce(Vector2.up * jumpSpeed);
 			isGrounded = false;
 

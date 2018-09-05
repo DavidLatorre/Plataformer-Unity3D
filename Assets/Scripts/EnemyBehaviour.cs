@@ -11,6 +11,8 @@ public class EnemyBehaviour : MonoBehaviour {
 	SpriteRenderer enemySpriteRend;
 	Animator enemyAnim;
 
+	ParticleSystem enemyPart;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -18,6 +20,7 @@ public class EnemyBehaviour : MonoBehaviour {
 		enemyRb = GetComponent<Rigidbody2D>();
 		enemySpriteRend = GetComponent<SpriteRenderer>();
 		enemyAnim = GetComponent<Animator>();
+		enemyPart = GameObject.Find("EnemyParticle").GetComponent<ParticleSystem>();
 
 	}
 	
@@ -52,6 +55,9 @@ public class EnemyBehaviour : MonoBehaviour {
 			
 			if(transform.position.y +.03f < collision.transform.position.y)
 			{
+				enemyPart.transform.position = transform.position;
+				GetComponent<AudioSource>().Play();
+				enemyPart.Play();
 				enemyAnim.SetBool("isDead", true);
 			} 
 		}	
